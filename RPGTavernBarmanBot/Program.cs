@@ -28,7 +28,7 @@ namespace RPGTavernBarman
                 .AddSingleton(_commands)
                 .BuildServiceProvider();
 
-            string token = "";
+            string token = "OTY0MjE5MTY4NjA4MDkyMTkw.YlhdFA.GSNphMbA3bNADXnkrqyA9aDAY5w";
 
             _client.Log += _client_Log;
 
