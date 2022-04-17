@@ -48,7 +48,7 @@ namespace RPGTavernBarman.Modules
             
             var MGHelp = new EmbedFieldBuilder()
                     .WithName("Komendy dla Mistrzów gry")
-                    .WithValue("&stwórzGre [nazwa] [system] [kolor hex] - dodaje nową rozgrywke" + Environment.NewLine + "&dodaj [gracz] - dodaje gracza do rozgrywki" + Environment.NewLine + "&Lista [nazwa rozgrywki] - wyświetla graczy");
+                    .WithValue("&stwórzGre [nazwa] [system] - dodaje nową rozgrywke" + Environment.NewLine + "&dodaj [gracz] - dodaje gracza do rozgrywki" + Environment.NewLine + "&Lista [nazwa rozgrywki] - wyświetla graczy");
             
             var Footer = new EmbedFooterBuilder()
                 .WithIconUrl("https://cdn.discordapp.com/attachments/907688885352529921/964223858498482267/milk-and-mocha-bear-couple.gif")
