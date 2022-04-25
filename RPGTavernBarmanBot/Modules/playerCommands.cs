@@ -14,7 +14,7 @@ namespace RPGTavernBarmanBot.Modules
         [Command("Kostka")]
         private async Task dice(int k)
         {
-            await Context.Client.SetGameAsync("DnD", "https://cthulhucorp.eu", ActivityType.Listening);
+            await Context.Client.SetGameAsync("DnD", "https://cthulhucorp.eu", ActivityType.Playing);
 
             var controler = k + 1;
             var result = rnd.Next(1, controler);

@@ -4,31 +4,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RPGTavernBarmanBot.Models;
-using RPGTavernBarmanBot.Data;
+using RPGTavernBarman.Models;
+using RPGTavernBarman.Data;
 using Discord;
 using System.Xml.Linq;
 
-namespace RPGTavernBarmanBot.Modules
+namespace RPGTavernBarman.Modules
 {
     public partial class Commands : ModuleBase<SocketCommandContext>
     {
-        private ApplicationDbContext _dataBase;
+        /*
+         To się zrobi kiedyś jak mi się będzie chaiło no cóż tak
         [Command("stwórzGre")]
         private async Task gameCreate(string name, string system)
         {
-            var Game = new Models.Game()
+            var game = new Games()
             {
-                Guid = new Guid(),
                 Name = name,
                 System = system,
                 GameColor = "153, 51, 153",
                 GameMaster = Context.Message.Author.Mention,
                 ServerDiscordId = Context.Guild.Id.ToString()
             };
-            _dataBase.Add<Models.Game>(Game);
+            _dataBase.Add<Games>(game);
             await _dataBase.SaveChangesAsync();
-
+            
             var Bot = new EmbedAuthorBuilder()
                 .WithName("Barmanka Tawerny RPG#7032")
                 .WithIconUrl("https://cdn.discordapp.com/attachments/907688885352529921/964221919316566106/23b23c38d0d96d9d23884dfc52bca758.jpg");
@@ -62,5 +62,7 @@ namespace RPGTavernBarmanBot.Modules
             }
             await ReplyAsync(embed: embed.Build());
         }
+    }
+  */
     }
 }

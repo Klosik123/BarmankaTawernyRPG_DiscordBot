@@ -5,15 +5,21 @@ using Discord.WebSocket;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using System.Xml.Linq;
+using RPGTavernBarman.Data;
 using System.Reflection;
 using System.Linq;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace RPGTavernBarman.Modules
 {
-
-    public class Commands : ModuleBase<SocketCommandContext>
+    public partial class Commands : ModuleBase<SocketCommandContext>
     {
+        /*private ApplicationDbContext _dataBase;
+        public Commands(ApplicationDbContext dataBase)
+        {
+            _dataBase = dataBase;
+        }
+        */
         [Command("BotInfo")]
         private async Task botInfo()
         {
@@ -59,10 +65,11 @@ namespace RPGTavernBarman.Modules
                     .WithColor(new Color(153, 51, 153))
                     .WithAuthor(Bot)
                     .WithFields(Fields)
-                    .WithFields(MGHelp)
+                    //.WithFields(MGHelp)
                     .WithFooter(Footer);
 
             await ReplyAsync(embed: embeda.Build());
         }
+        
     }
 }

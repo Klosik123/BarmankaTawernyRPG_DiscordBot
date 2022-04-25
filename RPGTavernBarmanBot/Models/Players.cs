@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using RPGTavernBarman.Modules;
 using System.ComponentModel.DataAnnotations;
-namespace RPGTavernBarmanBot.Models
+namespace RPGTavernBarman.Models
 {
-    internal class Players
+    public class Players
     {
         [Key]
         public Guid Guid { get; set; }

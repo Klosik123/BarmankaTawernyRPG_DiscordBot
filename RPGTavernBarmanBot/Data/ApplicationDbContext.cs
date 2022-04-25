@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RPGTavernBarmanBot.Models;
+using RPGTavernBarman.Models;
+using RPGTavernBarman.Modules;
 using Microsoft.EntityFrameworkCore;
 
-namespace RPGTavernBarmanBot.Data
+namespace RPGTavernBarman.Data
 {
-    internal class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : DbContext
     {
         private string _connectionString = "Server=localhost;User=root;Password=Klosik;Database=taverna;";
-        public DbSet<Game> Game { get; set; } = null!;
+        public DbSet<Games> Game { get; set; } = null!;
         public DbSet<Players> Players { get; set; } = null!;
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

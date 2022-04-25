@@ -8,7 +8,8 @@ using System.Xml.Linq;
 using System.Reflection;
 using System.Data.SqlClient;
 using RPGTavernBarman.Modules;
-namespace RPGTavernBarman
+
+namespace RPGTavernBarman.Modules
 {
     class Program
     {
@@ -28,7 +29,7 @@ namespace RPGTavernBarman
                 .AddSingleton(_commands)
                 .BuildServiceProvider();
 
-            string token = "OTY0MjE5MTY4NjA4MDkyMTkw.YlhdFA.GSNphMbA3bNADXnkrqyA9aDAY5w";
+            string token = "";
 
             _client.Log += _client_Log;
 
